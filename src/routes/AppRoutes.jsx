@@ -9,6 +9,7 @@ import Login from '../pages/auth/Login';
 import User from '../pages/user/User';
 import Dashboard from '../pages/admin/Dashboard';
 import Manage from '../pages/admin/Manage';
+import Register1 from '../pages/auth/Register1';
 
 
 function AppRoutes() {
@@ -18,7 +19,7 @@ function AppRoutes() {
     <Route path="/" element={ <Layout></Layout> }>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="register" element={<Register />} />
+        <Route path="register" element={<Register1 />} />
         <Route path="login" element={<Login />} />
     </Route>
 

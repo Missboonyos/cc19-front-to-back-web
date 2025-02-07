@@ -100,3 +100,20 @@ export default AppRoutes
 
 ## Step ?? install sweetalert2
 ```
+```
+
+## Step 4 React-Hook-form
+https://react-hook-form.com/
+
+```bash
+npm install react-hook-form
+```
+
+## Step 5 Validate with Zod
+
+https://github.com/react-hook-form/resolvers
+
+```bash
+npm install @hookform/resolvers
+npm i zod
+```

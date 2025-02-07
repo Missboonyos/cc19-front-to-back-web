@@ -26,8 +26,8 @@ function Register() {
       console.log(res)
       
       createAlert("success", "Register Success")
-      });
-    } catch (error) {
+      
+    }catch (error) {
       createAlert("info", error.response.data.message)
       console.log(error.response.data.message)      
     }
