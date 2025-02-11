@@ -10,6 +10,7 @@ import User from '../pages/user/User';
 import Dashboard from '../pages/admin/Dashboard';
 import Manage from '../pages/admin/Manage';
 import Register1 from '../pages/auth/Register1';
+import ProtectRoute from './ProtectRoute';
 
 
 function AppRoutes() {
@@ -24,12 +25,15 @@ function AppRoutes() {
     </Route>
 
     {/* Private [USER] */}
-    <Route path="user">
+    <Route 
+    path="user"
+    element={<ProtectRoute el={<Layout/>} allows={["USER"]}/>}>    
         <Route index element={<User />} />
     </Route>
 
     {/* Private [ADMIN] */}
-    <Route path="admin">
+    <Route path="admin" 
+    element={<ProtectRoute el={<Layout/>} allows={["ADMIN"]}/>}>
         <Route index element={<Dashboard />} />
         <Route path="manage" element={<Manage />} />
     </Route>

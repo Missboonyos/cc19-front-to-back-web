@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 function MainNav() {
   return (
     <nav 
-    className="bg-pink-400 text-white flex justify-between 
+    className="bg-blue-600 text-white flex justify-between 
     font-semibold px-8 py-2 rounded-md shadow
     "
     >

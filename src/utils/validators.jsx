@@ -13,3 +13,9 @@ export const registerSchema = z
     path: ["confirmPassword"],
 });
 
+export const loginSchema = z
+    .object({
+    email: z.string().email("Email is not correct"),    
+    password: z.string().min(6, "Password should be > 6 characters"),    
+})
+

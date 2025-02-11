@@ -5,7 +5,7 @@ import { Loader } from 'lucide-react';
 function Buttons( { isSubmitting, label}) {
   return (
     <button 
-    className='bg-pink-500 text-white px-2 py-1 rounded-md hover:cursor-pointer'>                
+    className='bg-blue-600 text-white px-2 py-1 rounded-md hover:cursor-pointer'>                
                 { 
                 isSubmitting 
                 ? <div className='flex gap-2'>

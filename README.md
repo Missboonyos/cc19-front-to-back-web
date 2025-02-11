@@ -117,3 +117,13 @@ https://github.com/react-hook-form/resolvers
 npm install @hookform/resolvers
 npm i zod
 ```
+
+## Step 6 Global State with Zustand
+```bash
+npm install zustand
+```
+
+## Step 7 Create new folder: store under src
+```plaintext
+and create new file: auth-store.jsx
+```
