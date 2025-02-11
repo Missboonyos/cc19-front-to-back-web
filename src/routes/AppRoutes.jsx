@@ -11,6 +11,7 @@ import Dashboard from '../pages/admin/Dashboard';
 import Manage from '../pages/admin/Manage';
 import Register1 from '../pages/auth/Register1';
 import ProtectRoute from './ProtectRoute';
+import LayoutAdmin from '../layouts/LayoutAdmin';
 
 
 function AppRoutes() {
@@ -33,7 +34,7 @@ function AppRoutes() {
 
     {/* Private [ADMIN] */}
     <Route path="admin" 
-    element={<ProtectRoute el={<Layout/>} allows={["ADMIN"]}/>}>
+    element={<ProtectRoute el={<LayoutAdmin/>} allows={["ADMIN"]}/>}>
         <Route index element={<Dashboard />} />
         <Route path="manage" element={<Manage />} />
     </Route>

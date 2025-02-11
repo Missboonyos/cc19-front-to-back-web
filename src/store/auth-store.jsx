@@ -23,7 +23,10 @@ const authStore = (set) => ({
             // console.log(error.response.data.message);
             return { success: false, error: error.response.data.message }
         }
-    },    
+    },   
+    actionLogout:()=> {
+        set({ user: [], token: null });
+    },
 });
 // Step 2 Exports Store
 const useAuthStore = create(persist(authStore,{name:'auth-store'}));
